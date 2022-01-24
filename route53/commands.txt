@@ -1,0 +1,5 @@
+aws cloudformation delete-stack --stack-name myhandeucom
+
+aws cloudformation create-stack --stack-name myhandeucom --template-body file://my53-hosting-static-web.template.yml --parameters file://my53-hosting-static-web.template.params
+
+aws cloudformation update-stack --stack-name myhandeucom --template-body file://my53-hosting-static-web.template.yml --parameters file://my53-hosting-static-web.template.params
